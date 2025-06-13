@@ -140,13 +140,10 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
-.venv
-env/
 venv/
-ENV/
-env.bak/
-venv.bak/
+.venv/
+env/
+.env
 
 # Spyder project settings
 .spyderproject
@@ -184,3 +181,35 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files - assuming they are large and shouldn't be in git
+# We will make an exception for the initial dataset if it's small enough,
+# but it's good practice to gitignore data.
+# data/
+*.zip
+*.csv
+*.parquet
+
+# Model files
+models/
+*.h5
+*.keras
+*.pt
+*.onnx
+
+# Reports
+reports/
+
+# OS-specific files
+Thumbs.db

@@ -1,8 +1,16 @@
-loguru
-mkdocs
-pip
-python-dotenv
-ruff
-tqdm
-typer
--e .
+# Core ML & Data
+tensorflow
+scikit-learn
+pandas
+matplotlib
+seaborn
+
+# API
+fastapi
+uvicorn[standard]
+
+# Notebooks
+jupyter
+
+# For dataset access from Kaggle
+kaggle
