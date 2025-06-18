@@ -73,7 +73,55 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. Lancer l'Entraînement
+## 🐳 API et Déploiement
+
+Cette section explique comment lancer l'API avec Docker ou utiliser la version déjà en ligne.
+
+### 1. Lancer l'API avec Docker (Local)
+
+**a. Construire l'image Docker**
+
+Assurez-vous que Docker Desktop est en cours d'exécution. À la racine du projet, lancez :
+```bash
+docker build -t classification-api .
+```
+
+**b. Lancer le conteneur Docker**
+```bash
+docker run -d -p 8000:8000 --name classification-api classification-api
+```
+
+**c. Accéder à l'API**
+
+L'API est maintenant disponible sur votre machine :
+- **Documentation Interactive (Swagger)** : [http://localhost:8000/docs](http://localhost:8000/docs)
+- **Endpoint Racine** : [http://localhost:8000](http://localhost:8000)
+
+Utilisez la documentation pour tester les endpoints directement depuis votre navigateur.
+
+### 2. Utiliser l'API Déployée (En Ligne)
+
+Une instance de l'API est également accessible publiquement pour des tests rapides sans aucune installation.
+
+- **URL de l'API** : `[INSERER LE LIEN DE VOTRE API DÉPLOYÉE ICI]`
+- **Documentation** : Visitez `[URL_API]/docs` pour voir les endpoints disponibles.
+
+**Exemple avec `curl` :**
+```bash
+# Pour classifier un texte
+curl -X POST "[URL_API]/predict/text" \
+-H "Content-Type: application/json" \
+-d '{"text": "The latest space mission was a resounding success."}'
+
+# Pour classifier une image
+curl -X POST "[URL_API]/predict/image" \
+-H "Content-Type: multipart/form-data" \
+-F "file=@/chemin/vers/votre/image.jpg"
+```
+
+## 💡 Entraînement des Modèles
+
+Si vous souhaitez entraîner les modèles vous-même :
 
 #### Option A: Via Jupyter Notebook (Recommandé)
 
