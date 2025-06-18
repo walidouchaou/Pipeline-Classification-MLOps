@@ -1,5 +1,6 @@
 # Core ML & Data
 tensorflow
+tf-keras
 scikit-learn
 pandas
 matplotlib
@@ -14,6 +15,7 @@ tokenizers
 # API
 fastapi
 uvicorn[standard]
+python-multipart
 
 # Notebooks
 jupyter

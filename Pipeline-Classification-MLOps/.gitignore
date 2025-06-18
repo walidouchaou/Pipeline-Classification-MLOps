@@ -201,12 +201,8 @@ __pycache__/
 *.csv
 *.parquet
 
-# Model files
-models/
-*.h5
-*.keras
-*.pt
-*.onnx
+
+
 
 # Reports
 reports/

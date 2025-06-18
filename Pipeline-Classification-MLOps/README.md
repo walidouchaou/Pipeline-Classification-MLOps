@@ -274,29 +274,4 @@ EPOCHS = 50             # Nombre d'epochs max
 4. Push vers la branche (`git push origin feature/amelioration`)
 5. Créer une Pull Request
 
-## 📝 License
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
-
-## 👥 Auteurs
-
-- **Votre Nom** - *Développement initial* - [VotreGitHub](https://github.com/votre-username)
-
-## 🙏 Remerciements
-
-- Dataset fourni par [Anthony Therrien](https://www.kaggle.com/anthonytherrien) sur Kaggle
-- Architecture EfficientNet par Google Research
-- Framework TensorFlow/Keras
-
----
-
-## 📞 Support
-
-Si vous rencontrez des problèmes :
-
-1. **Vérifiez** que toutes les dépendances sont installées
-2. **Consultez** les issues GitHub existantes
-3. **Créez** une nouvelle issue avec les détails de l'erreur
-
-**Bonne classification ! 🎯**
 
