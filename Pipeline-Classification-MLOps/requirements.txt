@@ -5,6 +5,12 @@ pandas
 matplotlib
 seaborn
 
+# Hugging Face Transformers (for text classification)
+transformers
+datasets
+torch
+tokenizers
+
 # API
 fastapi
 uvicorn[standard]
@@ -14,3 +20,6 @@ jupyter
 
 # For dataset access from Kaggle
 kaggle
+
+# Additional dependencies for text processing
+huggingface-hub
