@@ -107,18 +107,18 @@ Utilisez la documentation pour tester les endpoints directement depuis votre nav
 
 Une instance de l'API est également accessible publiquement pour des tests rapides sans aucune installation.
 
-- **URL de l'API** : `https://pipelineclassificationmlopsapi.fuexfhceedbpc7d2.francecentral.azurecontainer.io/8000`
-- **Documentation** : Visitez `https://pipelineclassificationmlopsapi.fuexfhceedbpc7d2.francecentral.azurecontainer.io/8000docs` pour voir les endpoints disponibles.
+- **URL de l'API** : `http://classification-api-rest.eccmgzdhg4fna8cf.francecentral.azurecontainer.io:8000`
+- **Documentation** : Visitez `http://classification-api-rest.eccmgzdhg4fna8cf.francecentral.azurecontainer.io:8000/docs` pour voir les endpoints disponibles.
 
 **Exemple avec `curl` :**
 ```bash
 # Pour classifier un texte
-curl -X POST "https://pipelineclassificationmlopsapi.fuexfhceedbpc7d2.francecentral.azurecontainer.io/8000/predict/text" \
+curl -X POST "http://classification-api-rest.eccmgzdhg4fna8cf.francecentral.azurecontainer.io:8000/predict/text" \
 -H "Content-Type: application/json" \
 -d '{"text": "The latest space mission was a resounding success."}'
 
 # Pour classifier une image
-curl -X POST "https://pipelineclassificationmlopsapi.fuexfhceedbpc7d2.francecentral.azurecontainer.io/8000/predict/image" \
+curl -X POST "http://classification-api-rest.eccmgzdhg4fna8cf.francecentral.azurecontainer.io:8000/predict/image" \
 -H "Content-Type: multipart/form-data" \
 -F "file=@/chemin/vers/votre/image.jpg"
 ```
