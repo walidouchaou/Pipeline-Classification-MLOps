@@ -4,6 +4,11 @@ Un pipeline complet de **Machine Learning** utilisant **Deep Learning** et **Tra
 - **🖼️ Classification d'Images** : 32 catégories d'objets avec EfficientNetV2B0
 - **📝 Classification de Texte** : 4 catégories d'actualités avec DistilBERT
 
+## 👥 Auteurs
+
+- **OUCHAOU WALID**
+- **MELLAK MELYSSA**
+
 ## 🎯 Objectif
 
 Développer des systèmes robustes de classification incluant :
@@ -51,7 +56,6 @@ Pipeline-Classification-MLOps/
 
 ```bash
 git clone https://github.com/votre-username/Pipeline-Classification-MLOps.git
-cd Pipeline-Classification-MLOps
 ```
 
 ### 2. Créer un Environnement Virtuel
@@ -103,18 +107,18 @@ Utilisez la documentation pour tester les endpoints directement depuis votre nav
 
 Une instance de l'API est également accessible publiquement pour des tests rapides sans aucune installation.
 
-- **URL de l'API** : `[INSERER LE LIEN DE VOTRE API DÉPLOYÉE ICI]`
-- **Documentation** : Visitez `[URL_API]/docs` pour voir les endpoints disponibles.
+- **URL de l'API** : `https://pipelineclassificationmlopsapi.fuexfhceedbpc7d2.francecentral.azurecontainer.io/8000`
+- **Documentation** : Visitez `https://pipelineclassificationmlopsapi.fuexfhceedbpc7d2.francecentral.azurecontainer.io/8000docs` pour voir les endpoints disponibles.
 
 **Exemple avec `curl` :**
 ```bash
 # Pour classifier un texte
-curl -X POST "[URL_API]/predict/text" \
+curl -X POST "https://pipelineclassificationmlopsapi.fuexfhceedbpc7d2.francecentral.azurecontainer.io/8000/predict/text" \
 -H "Content-Type: application/json" \
 -d '{"text": "The latest space mission was a resounding success."}'
 
 # Pour classifier une image
-curl -X POST "[URL_API]/predict/image" \
+curl -X POST "https://pipelineclassificationmlopsapi.fuexfhceedbpc7d2.francecentral.azurecontainer.io/8000/predict/image" \
 -H "Content-Type: multipart/form-data" \
 -F "file=@/chemin/vers/votre/image.jpg"
 ```
